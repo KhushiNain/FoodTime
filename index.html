@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- ingredient list pop up -->
+    <div id="popUp" class="ingredient flex align-center">
+        <div class="box">
+            <h1>Items you need</h1>
+            <ul id="list"  class="flex column ">
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- header section -->
+    <header>
+        <!-- navigation section -->
+        <nav class="flex space-between align-center" >
+            <div class="logo flex align-center">
+                <img src="./Images/Screenshot 2023-12-06 173323.png" alt="">
+                <div ><span>Food</span> Time</div>
+            </div>
+            <div class="menu flex space-between">
+                <div class="home active flex column">
+                    <img src="./Images/bx-home-alt-2.svg" alt="">
+                    <div class="logo-name">HOME</div>
+                </div>
+                <div class="contact-us flex column">
+                    <img src="./Images/bxs-conversation.svg" alt="">
+                    <div class="logo-name">CONTACT US</div>
+                </div>
+                <div class="share flex column">
+                    <img src="./Images/bx-share-alt.svg" alt="">
+                    <div class="logo-name">SHARE</div>
+                </div>
+            </div>
+            <div class="hambur">
+                <img src="./Images/bx-menu.svg" alt="">
+            </div>
+            <div class="number flex align-center space-between">
+                <img src="./Images/bxs-phone.svg" alt="">
+                <div> + 9416709845</div>
+            </div>
+        </nav>
+        <!-- Heading and search bar -->
+        <h1>Unleash the Chef in You</h1>
+        <p>Food is like duct tape. It fixes everything </p>
+        <p>especially a grumbling stomach!</p>
+        <div class="search-bar flex align-center" >
+            <input id="search-value" type="text" placeholder="Search for a meal....">
+            <img src="./Images/bx-search-alt-2.svg" alt="" onclick="searchResult()">
+        </div>
+    </header>
+    <!-- hero section -->
+    <div class="hero flex space-between">
+        <div class="headerran flex align-center">Gourmet's Choice:</div>
+        
+        <div class="dish flex column align-center">
+            <img onclick="showpopUp()" id="randomedish" src=""></img>
+            <div class="name flex space-between">
+                <div id="start-ribbon"></div>
+                <p id="dishname" class="flex align-center"></p>
+                <div id="end-ribbon"></div>
+            </div>
+        </div>
+        <div class="options flex column">
+            <div class="ingredients flex align-center" onclick="showpopUp()">
+                <img id="minimeal" src="" alt="">
+                <p>Ingredients</p>
+            </div>
+            <div class="new-random flex align-center">
+                <p id="new-dish" onclick="newDish()">New Dish</p>
+            </div>
+        </div>
+    </div> 
+    <!-- Third session -->
+    <div class="display-search" id="none">
+        <h1> YOUR SEARCH : <span id="csearched">FISH</span> </h1>
+        <div class="display-belt flex space-between">
+            <div>
+                <img id="cimg1" src="./Images/Vegetable&FishStew.jpeg" alt="">
+                <p id="ctitle1">Vegetable And Fish Stew</p>
+            </div>
+            <div>
+                <img id="cimg2" src="./Images/Tandoori Fish - Tikka Fish Recipe.jpeg" alt="">
+                <p id="ctitle2">Tandoori Fish</p>
+            </div>
+            <div>
+                <img id="cimg3" src="./Images/FriedSalmonPatties.jpeg" alt="">
+                <p id="ctitle3">Salmon Fish Croquettes</p>
+            </div>
+            <div>
+                <img id="cimg4" src="./Images/FishFinger.jpeg" alt="">
+                <p id="ctitle4">Finger Fish</p>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="upper flex align-center space-between">
+            <div class="bottom-logo">
+                <div class="logo flex align-center">
+                    <img src="./Images/Screenshot 2023-12-06 173323.png" alt="">
+                    <div ><span>Food</span> Time</div>
+                </div>
+            </div>
+            <div class="info flex space-between">
+                <div class="flex column align-center">
+                    <p>Meet Our Chief</p>
+                    <p>Khushi</p>
+                    <p>Alisha</p>
+                    <p>Simran</p>
+                </div>
+                <div class="flex column align-center">
+                    <p>Contact us</p>
+                    <div  class="flex footer-icom align-center">
+                        <img src="./Images/bxl-gmail.svg" alt="">
+                        <img src="./Images/bxl-linkedin-square.svg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="flex column align-center">
+                    <p>Share</p>
+                    <div class="flex footer-icom align-center">
+                        <img src="./Images/bxl-twitter.svg" alt="">
+                        <img src="./Images/bxl-whatsapp.svg" alt="">
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="bottom">Designed by Kalvian</div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

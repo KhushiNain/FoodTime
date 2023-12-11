@@ -1,0 +1,431 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+                                                                    /* Styling the header part of web page */
+header{
+    width: 100vw;
+    background-color: black;
+    height: 380px;
+    background: rgba(0,0,0,0.7)url(./Images/headerbg.png);   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:darken; 
+    padding-top: 15px;
+}
+/* some obvious styling class */
+.flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.column{
+    flex-direction: column;
+}
+                                                                        /* styling the nav bar  */
+nav{
+    width: 98vw;
+    height: 70px;
+    background-color: white;
+    margin-left: 1.8vw;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-inline: 2vw;
+}
+.logo img{
+    height: 70px;
+}
+.logo{
+    font-size: 32px;
+    font-family: 'Irish Grover';
+}
+.logo span{
+    color: #FF7A00;
+}
+.menu{
+    width: 22vw;
+}
+.menu img{
+    height: 35px;
+}
+.number{
+    background-color: #FF7A00;
+    padding-inline: 25px;
+    width: 250px;
+    height: 45px;
+    border-radius: 25px;
+}
+.number img{
+    height: 30px;
+}
+.number div{
+    color: white;
+    font-size: 22px;
+    padding-right: 35px;
+}
+header h1{
+    color: white;
+    font-size: 54px;
+    text-align: center;
+    font-family: 'Inika', serif;
+    padding-top: 30px;
+    letter-spacing: 8px;
+}
+header p{
+    color: white;
+    font-size: 22px;
+    font-weight: lighter;
+    text-align: center;
+    font-family: 'Inika', serif;
+    letter-spacing: 4px;
+}
+.search-bar{
+    justify-content: center;
+    margin-top: 5vh;
+}
+.search-bar input{
+    height: 50px;
+    padding-left: 20px;
+    width: 20vw;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: 5px solid #FF7A00;
+    font-size: 20px;   
+}
+.search-bar img{
+    background-color: white;
+    border-right: 5px solid #FF7A00;
+    border-top: 5px solid #FF7A00 ;
+    border-bottom: 5px solid #FF7A00;
+    height: 50px;
+    width: 55px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px; 
+}
+.hambur img{
+    height: 70px;
+}
+.hambur{
+    display: none;
+
+}
+                                                                    /* styling hero section */
+.hero{
+    width: 100vw;
+    height: 45vh;
+    background-color: #F9E8D9;
+}
+.headerran{
+    background-color: #FF7A00;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 15vw;
+    height: 90px;
+    padding-left:10px;
+    font-size: 32px;
+    margin-top: 5vh;
+    font-family: 'Inika', serif;
+    color: black;
+}
+.dish{
+    justify-content: center;
+}
+.dish img{
+    height: 282px;
+    width: 310px;
+    border-radius: 40px;
+    border: 12px solid #FF7A00;
+    margin: 10px;
+}
+.name{
+    height: 90px;
+    background-color: black;
+    color: white;
+    font-size: 32px;
+}
+.name p{
+    letter-spacing: 5px;
+    font-family: 'Inika', serif;
+    padding-inline: 1vw;
+}
+#end-ribbon{
+    border-top: 45px solid transparent;
+    border-right: 90px solid  #F9E8D9;
+    border-bottom: 45px solid transparent;
+}
+#start-ribbon{
+    border-top: 45px solid transparent;
+    border-left: 90px solid  #F9E8D9;
+    border-bottom: 45px solid transparent;
+}
+.options{
+    align-items: end;
+    justify-content: center;
+}
+.options div{
+    border: 2px solid whitesmoke;
+    height: 70px;
+    width: 15vw;
+    background-color: white;
+    border-bottom-left-radius: 45px;
+    border-top-left-radius: 45px;
+    padding-right:10px;
+    font-size: 30px;
+    font-family: 'Inika', serif;
+    color: black;
+}
+.new-random{
+    padding-left: 2vw;
+    margin-top: 5vh;
+}
+.options img{
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.options p{
+    padding-left: 1vw;
+}
+.options div:hover{
+    background-color: #FF7A00;
+    font-size: 35px;
+    padding-block: 40px;
+    width: 20vw;
+}
+
+                                                                /* styling third section */
+
+.display-search{
+    background-color: #F9E8D9;
+    display: none;
+    width: 100vw;
+    margin-top: 20px;
+    padding-block: 1vw;
+}
+.display-search h1{
+    font-family: 'Inika', serif;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+}
+.display-belt div{
+    width: 250px;
+    height: 340px;
+    background-color: white;
+    margin: 20px;
+    box-shadow: 5px 5px 9px rgb(211, 193, 193);
+}
+.display-belt{
+    flex-wrap: wrap;
+    padding-inline: 10vw;
+    font-size: 20px;
+    font-family: 'Inika', serif;
+}
+.display-belt img{
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+}
+.display-belt p{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    padding-inline: 2px;
+}
+
+                                                                    /* styling footer */
+
+.footer{
+    margin-top: 20px;
+}
+.upper{
+    width: 100vw;
+    padding-block: 20px;
+    background-color: #FFA553;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    padding-right: 30%;
+}
+.bottom-logo{
+    width: 250px;
+    background-color: white;
+    height: 70px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.info p{
+    font-size: 25px;
+    color: white;
+    font-family: 'Inika', serif;
+}
+.info{
+    width: 70%;
+    justify-content: space-around;
+}
+.info img{
+    height: 40px;
+    margin-top: 10px;
+}
+.bottom{
+    background-color: #FF7A00;
+    width: 100vw;
+    font-size: 25px;
+    color: white;
+    font-family: 'Inika', serif;
+    text-align: center;
+    padding: 10px;
+}
+.footer-icom{
+    justify-content: center;
+}
+.footer-icom img{
+    margin-inline: 0.5rem;
+}
+
+                                                                                /* pop up styling */
+
+.ingredient{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.788);
+    position: absolute;
+    display: none;
+}
+.box{
+    width: 400px;
+    height: 50vh;
+    background-color: white;
+    /* border: 2px solid re */
+    border-radius: 30px;
+    font-family: 'Inika', serif;
+    border: 10px solid  #FF7A00 ;
+}
+.box h1{
+    background-color: #FF7A00;
+    color: white;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 80%;
+    padding: 8px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.box ul{
+    background-color: #FFA553;
+    width: 77%;
+    margin-left: 15%;
+    border-radius: 15px;
+    height: 75%;
+    font-size: 25px;
+    justify-content: center;
+}
+.box li{
+    padding-left: 10px;
+    padding: 4px;
+}
+
+
+@media only screen and (max-width: 1200px){
+    .logo img{
+        height: 55px;
+    }
+    .menu{
+        display: none;
+    }
+    .number{
+        display: none;
+    }
+    .hambur{
+        display: block;
+    }
+    header h1{
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    header p{
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .search-bar input{
+        width: 290px;
+    }
+    header{
+        height: 300px;
+    }
+    .hero{
+        height: 520px;
+        flex-direction: column;
+    }
+    .new-random{
+        display: none;
+    }
+    .name{
+        padding: 10px;
+        font-size: 20px;
+        height: 70px;
+    }
+    .options{
+        align-self: flex-end;
+        padding: 10px;
+    }
+    .options div{
+        width: 300px;
+        font-size: 20px;
+        background-color: #FF7A00;
+    }
+    .headerran{
+        width: 300px;
+        align-items: flex-start;
+        margin: 2px;
+    }
+    .dish{
+        margin: auto;
+    }
+    .name div{
+        display: none;
+    }
+    .display-belt div{
+        width: 150px;
+        height: 200px;
+    }
+    .display-belt{
+        justify-content: center;
+        padding: 0;
+    }
+    .display-belt{
+        padding-inline: 10px;
+        font-size: 14px;
+    }
+    .display-belt img{
+        padding: 5px;
+    }
+    .display-belt div{
+        margin: 5px;
+    }
+    .display-search h1{
+        font-size: 25px;
+    }
+    .info{
+        width: 100%;
+        padding-inline: 5%;
+    }
+    .info p{
+        font-size: 18px;
+    }
+    .info img{
+        height: 30px;
+    }
+    .bottom-logo{
+        height: 60px;
+    }
+}
