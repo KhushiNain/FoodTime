@@ -253,7 +253,7 @@ header p{
     background-color: #FFA553;
     margin-top: 20px;
     flex-wrap: wrap;
-    padding-right: 30%;
+    /* padding-right: 30%; */
 }
 .bottom-logo{
     width: 250px;
